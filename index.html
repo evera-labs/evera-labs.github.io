@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Evera Labs – Android apps</title>
 <meta name="description" content="Evera Labs builds small, focused Android apps. Browse our apps on Google Play.">
+<link rel="icon" href="evera-labs-logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -28,6 +29,7 @@ a{color:inherit}
 .wrap{max-width:1040px;margin:0 auto;padding:0 24px}
 header{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
 .logo{font:800 1.35rem var(--h);text-decoration:none;display:flex;gap:10px;align-items:center;letter-spacing:-.01em}
+.logo img{border-radius:8px;display:block;object-fit:contain}
 .logo i{width:26px;height:26px;border-radius:50% 50% 50% 8px;background:var(--teal);display:block}
 nav{display:flex;gap:22px;font-weight:500}
 nav a{text-decoration:none;color:var(--muted)}
@@ -66,7 +68,7 @@ footer div{display:flex;gap:20px}
 <body>
 <div class="wrap">
   <header>
-    <a class="logo" href="#top"><img src="evera-labs-logo.png" alt="" width="26" height="26">Evera Labs</a>
+    <a class="logo" href="#top"><img src="evera-labs-logo.png" alt="" width="36" height="36" onerror="this.outerHTML='&lt;i aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;'">Evera Labs</a>
     <nav aria-label="Main"><a href="#apps">Apps</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
   </header>
 
