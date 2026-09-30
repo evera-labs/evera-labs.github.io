@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Evera Labs – Android apps</title>
+<meta name="description" content="Evera Labs builds small, focused Android apps. Browse our apps on Google Play.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eef2f3;--surface:#fbfcfc;--ink:#10232b;--muted:#4d626b;--line:#cbd7db;
+  --teal:#0b7a85;--coral:#ff5a44;--on-accent:#fff;
+  --h:"Bricolage Grotesque","Trebuchet MS",sans-serif;
+  --b:"Instrument Sans","Segoe UI",Roboto,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0d1a20;--surface:#132630;--ink:#e8f1f3;--muted:#9bb3bb;--line:#26404b;--teal:#4cc3cf;--coral:#ff7a66;--on-accent:#0d1a20}
+}
+:root[data-theme="dark"]{--bg:#0d1a20;--surface:#132630;--ink:#e8f1f3;--muted:#9bb3bb;--line:#26404b;--teal:#4cc3cf;--coral:#ff7a66;--on-accent:#0d1a20}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 var(--b)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.logo{font:800 1.35rem var(--h);text-decoration:none;display:flex;gap:10px;align-items:center;letter-spacing:-.01em}
+.logo i{width:26px;height:26px;border-radius:50% 50% 50% 8px;background:var(--teal);display:block}
+nav{display:flex;gap:22px;font-weight:500}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.hero{padding:72px 0 64px;border-bottom:1px solid var(--line)}
+h1{font:800 clamp(2.6rem,7.5vw,5.6rem)/.98 var(--h);letter-spacing:-.035em;margin:0 0 24px;max-width:13ch}
+.hero p{max-width:52ch;color:var(--muted);font-size:1.2rem;margin:0 0 32px}
+.btn{display:inline-block;background:var(--ink);color:var(--bg);font-weight:600;text-decoration:none;padding:14px 24px;border-radius:999px}
+.btn:hover{background:var(--teal);color:var(--on-accent)}
+.btn.alt{background:transparent;color:var(--ink);border:1.5px solid var(--ink);margin-left:8px}
+.btn.alt:hover{background:var(--ink);color:var(--bg)}
+section{padding:64px 0}
+h2{font:700 clamp(1.8rem,4vw,2.6rem)/1.1 var(--h);letter-spacing:-.02em;margin:0 0 12px}
+.lede{color:var(--muted);max-width:56ch;margin:0 0 36px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,360px));gap:20px}
+.app{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:14px}
+.icon{width:64px;height:64px;border-radius:16px;display:grid;place-items:center;font:800 1.8rem var(--h);color:#fff}
+.app h3{font:700 1.3rem var(--h);margin:0}
+.app p{margin:0;color:var(--muted);flex:1}
+.tag{font-size:.9rem;color:var(--muted)}
+.get{font-weight:600;color:var(--teal);text-decoration:none}
+.get:hover{text-decoration:underline}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:48px;border-top:1px solid var(--line)}
+.about ul{list-style:none;margin:0;padding:0;display:grid;gap:18px}
+.about li strong{display:block;font:700 1.1rem var(--h)}
+.about li span{color:var(--muted)}
+.contact{border-top:1px solid var(--line)}
+.contact a.mail{font:700 clamp(1.4rem,4vw,2.2rem) var(--h);color:var(--teal)}
+footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:.95rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
+footer div{display:flex;gap:20px}
+@media(max-width:720px){.about{grid-template-columns:1fr;gap:28px}nav{gap:14px}.btn.alt{margin:10px 0 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="logo" href="#top"><i aria-hidden="true"></i>Evera Labs</a>
+    <nav aria-label="Main"><a href="#apps">Apps</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <h1>Small apps, made carefully.</h1>
+      <p>Evera Labs is an independent Android developer. Every app does one job well, respects your privacy, and is free of clutter.</p>
+      <a class="btn" href="https://play.google.com/store/apps/developer?id=Evera+Labs" rel="noopener">See our apps on Google Play</a>
+      <a class="btn alt" href="#apps">Browse below</a>
+    </div>
+
+    <section id="apps">
+      <h2>Our apps</h2>
+      <p class="lede">Tap an app to open it on Google Play.</p>
+      <div class="grid">
+        <article class="app">
+          <div class="icon" style="background:#0b7a85" aria-hidden="true">R</div>
+          <h3>Voice Recorder: Audio Recorder</h3>
+          <p>Record clear audio in one tap, then play back, trim and share your recordings.</p>
+          <span class="tag">Audio &amp; Music</span>
+          <a class="get" href="https://play.google.com/store/apps/developer?id=Evera+Labs" rel="noopener">Get on Google Play</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div>
+        <h2>How we build</h2>
+        <p class="lede">A lab is where ideas get tested. We ship an app only when it earns a place on your phone.</p>
+      </div>
+      <ul>
+        <li><strong>Privacy first</strong><span>We collect only what an app needs to work, and we explain it in plain language.</span></li>
+        <li><strong>Light and fast</strong><span>Small downloads, low battery use and no unnecessary permissions.</span></li>
+        <li><strong>Listening to users</strong><span>Reviews and emails shape every update.</span></li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Get in touch</h2>
+      <p class="lede">Questions, bug reports or ideas for a new app? Write to us.</p>
+      <a class="mail" href="mailto:appsofnirvana@gmail.com">appsofnirvana@gmail.com</a>
+    </section>
+  </main>
+</div>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Evera Labs. Google Play is a trademark of Google LLC.</span>
+    <div><a href="#">Privacy Policy</a><a href="#">Terms</a></div>
+  </div>
+</footer>
+</body>
+</html>
