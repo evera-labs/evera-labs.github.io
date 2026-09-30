@@ -46,7 +46,8 @@ h2{font:700 clamp(1.8rem,4vw,2.6rem)/1.1 var(--h);letter-spacing:-.02em;margin:0
 .lede{color:var(--muted);max-width:56ch;margin:0 0 36px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,360px));gap:20px}
 .app{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:14px}
-.icon{width:64px;height:64px;border-radius:16px;display:grid;place-items:center;font:800 1.8rem var(--h);color:#fff}
+.img-icon{}
+.icon{width:64px;height:64px;border-radius:16px;object-fit:cover;display:grid;place-items:center;font:800 1.8rem var(--h);color:#fff}
 .app h3{font:700 1.3rem var(--h);margin:0}
 .app p{margin:0;color:var(--muted);flex:1}
 .tag{font-size:.9rem;color:var(--muted)}
@@ -85,7 +86,7 @@ footer div{display:flex;gap:20px}
       <p class="lede">Tap an app to open it on Google Play.</p>
       <div class="grid">
         <article class="app">
-          <div class="icon" style="background:#0b7a85" aria-hidden="true">R</div>
+          <img class="icon" src="voicerecorder/app-icon.png" alt="Voice Recorder app icon" width="64" height="64" onerror="this.outerHTML='&lt;div class=&quot;icon&quot; style=&quot;background:#0b7a85&quot; aria-hidden=&quot;true&quot;&gt;R&lt;/div&gt;'">
           <h3>Voice Recorder: Audio Recorder</h3>
           <p>Record clear audio in one tap, then play back, trim and share your recordings.</p>
           <span class="tag">Audio &amp; Music</span>
