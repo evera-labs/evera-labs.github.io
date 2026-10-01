@@ -1,1 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy Policy – Voice Recorder: Audio Recorder</title>
+<meta name="description" content="Privacy Policy for the Voice Recorder: Audio Recorder Android app.">
+<link rel="icon" href="evera-labs-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eef2f3;--surface:#fbfcfc;--ink:#10232b;--muted:#4d626b;--line:#cbd7db;
+  --teal:#0b7a85;--coral:#ff5a44;--on-accent:#fff;
+  --h:"Bricolage Grotesque","Trebuchet MS",sans-serif;
+  --b:"Instrument Sans","Segoe UI",Roboto,sans-serif;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0d1a20;--surface:#132630;--ink:#e8f1f3;--muted:#9bb3bb;--line:#26404b;--teal:#4cc3cf;--coral:#ff7a66;--on-accent:#0d1a20}
+}
+:root[data-theme="dark"]{--bg:#0d1a20;--surface:#132630;--ink:#e8f1f3;--muted:#9bb3bb;--line:#26404b;--teal:#4cc3cf;--coral:#ff7a66;--on-accent:#0d1a20}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 var(--b)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.logo{font:800 1.35rem var(--h);text-decoration:none;display:flex;gap:10px;align-items:center;letter-spacing:-.01em}
+.logo img{border-radius:8px;display:block;object-fit:contain}
+.logo i{width:26px;height:26px;border-radius:50% 50% 50% 8px;background:var(--teal);display:block}
+nav{display:flex;gap:22px;font-weight:500}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.hero{padding:72px 0 64px;border-bottom:1px solid var(--line)}
+h1{font:800 clamp(2.6rem,7.5vw,5.6rem)/.98 var(--h);letter-spacing:-.035em;margin:0 0 24px;max-width:13ch}
+.hero p{max-width:52ch;color:var(--muted);font-size:1.2rem;margin:0 0 32px}
+.btn{display:inline-block;background:var(--ink);color:var(--bg);font-weight:600;text-decoration:none;padding:14px 24px;border-radius:999px}
+.btn:hover{background:var(--teal);color:var(--on-accent)}
+.btn.alt{background:transparent;color:var(--ink);border:1.5px solid var(--ink);margin-left:8px}
+.btn.alt:hover{background:var(--ink);color:var(--bg)}
+section{padding:64px 0}
+h2{font:700 clamp(1.8rem,4vw,2.6rem)/1.1 var(--h);letter-spacing:-.02em;margin:0 0 12px}
+.lede{color:var(--muted);max-width:56ch;margin:0 0 36px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,360px));gap:20px}
+.app{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:14px}
+.img-icon{}
+.icon{width:64px;height:64px;border-radius:16px;object-fit:cover;display:grid;place-items:center;font:800 1.8rem var(--h);color:#fff}
+.app h3{font:700 1.3rem var(--h);margin:0}
+.app p{margin:0;color:var(--muted);flex:1}
+.tag{font-size:.9rem;color:var(--muted)}
+.get{font-weight:600;color:var(--teal);text-decoration:none}
+.get:hover{text-decoration:underline}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:48px;border-top:1px solid var(--line)}
+.about ul{list-style:none;margin:0;padding:0;display:grid;gap:18px}
+.about li strong{display:block;font:700 1.1rem var(--h)}
+.about li span{color:var(--muted)}
+.contact{border-top:1px solid var(--line)}
+.contact a.mail{font:700 clamp(1.4rem,4vw,2.2rem) var(--h);color:var(--teal)}
+footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:.95rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
+footer div{display:flex;gap:20px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--ink)}
+@media(max-width:720px){.about{grid-template-columns:1fr;gap:28px}nav{gap:14px}.btn.alt{margin:10px 0 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
+.doc{max-width:720px;padding:48px 0 64px}
+.doc h1{font-size:clamp(2.2rem,6vw,3.4rem);max-width:none;margin-bottom:8px}
+.doc h2{font-size:1.4rem;margin:36px 0 8px}
+.doc p,.doc li{color:var(--muted)}
+.doc ul{padding-left:20px}
+.doc a{color:var(--teal)}
+.upd{font-size:.95rem;color:var(--muted);margin:0 0 28px}
+
+.doc h2{margin-top:40px}
+.doc h3{font:700 1.1rem var(--h);margin:24px 0 6px}
+.doc strong{color:var(--ink)}
+.doc code{font:500 .9em ui-monospace,Menlo,Consolas,monospace;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:1px 6px;color:var(--ink)}
+.doc .meta{margin:0 0 28px;font-size:.95rem}
+.doc .meta span{display:block}
+.promise{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:12px;padding:18px 22px;margin:20px 0}
+.promise p{margin:0;color:var(--ink)}
+.promise p+p{margin-top:8px}
+.tbl{overflow-x:auto;margin:16px 0;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:.97rem}
+th,td{text-align:left;vertical-align:top;padding:12px 14px;border-bottom:1px solid var(--line)}
+th{background:var(--surface);color:var(--ink);font-weight:600}
+tr:last-child td{border-bottom:0}
+hr{border:0;border-top:1px solid var(--line);margin:36px 0 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="logo" href="index.html"><img src="evera-labs-logo.png" alt="" width="36" height="36" onerror="this.outerHTML='&lt;i aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;'">Evera Labs</a>
+  </header>
+  <main class="doc">
+    <h1>Privacy Policy for Voice Recorder: Audio Recorder</h1>
+    <p class="meta">
+      <span><strong>Last Updated:</strong> October 1, 2026</span>
+      <span><strong>Effective Date:</strong> October 1, 2026</span>
+      <span><strong>Application Name:</strong> Voice Recorder: Audio Recorder</span>
+      <span><strong>Package Name:</strong> <code>com.evera.voicerecorder</code></span>
+      <span><strong>Developer / Organization:</strong> Evera Apps ("we", "us", or "our")</span>
+      <span><strong>Contact Email:</strong> <a href="mailto:support@evera.com">support@evera.com</a></span>
+    </p>
+
+    <h2>1. Introduction</h2>
+    <p>Welcome to <strong>Voice Recorder: Audio Recorder</strong> (the "App"). We respect your privacy and are committed to protecting it through transparent data practices.</p>
+    <p>This Privacy Policy explains how our App handles your information, what permissions we require, how third-party services operate within the App, and your rights under global privacy laws including the <strong>General Data Protection Regulation (GDPR)</strong>, the <strong>California Consumer Privacy Act (CCPA / CPRA)</strong>, and <strong>Google Play Developer Program Policies</strong>.</p>
+    <div class="promise">
+      <p><strong>KEY PRIVACY PROMISE:</strong></p>
+      <p><strong>Your audio recordings are 100% private and stored locally on your device.</strong> We do <strong>not</strong> upload, transfer, listen to, analyze, sell, or store your voice recordings or audio files on our servers or any cloud services. What you record stays strictly on your device.</p>
+    </div>
+
+    <h2>2. Information We Collect and Process</h2>
+    <h3>A. Information Stored Locally on Your Device (Not Transmitted to Us)</h3>
+    <p>When you use the App, the following content is created and stored exclusively on your device's local storage or a custom directory chosen by you:</p>
+    <ul>
+      <li><strong>Audio Recordings &amp; Voice Memos:</strong> High-definition recordings created in AAC (M4A), AMR, 3GP, or WAV formats.</li>
+      <li><strong>Recording Metadata:</strong> File names, recording duration, timestamps, sample rates, bitrates, file sizes, and audio source selections.</li>
+      <li><strong>User Annotations &amp; Bookmarks:</strong> Custom markers, tags, timestamps, labels (e.g., questions, highlights), and textual notes attached to recordings.</li>
+      <li><strong>Categories &amp; Organization:</strong> Tags such as Meetings, Lectures, Voice Notes, Music, Personal, or Favorites.</li>
+      <li><strong>App Preferences:</strong> UI theme (dark/light), default recording format, sample rate, silence detection sensitivity, mic gain preferences, and language selection.</li>
+    </ul>
+    <p>None of the above data is ever collected by Evera Apps, nor is it uploaded to our servers.</p>
+
+    <h3>B. Information Collected Automatically by Third-Party SDKs</h3>
+    <p>While we do not collect personal identification information (such as your legal name, physical address, email address, or phone number), the App integrates reputable third-party SDKs to provide advertising, diagnostics, and app performance analytics. These services may collect technical device data:</p>
+    <ol>
+      <li><strong>Device &amp; Network Identifiers:</strong>
+        <ul>
+          <li>Mobile Advertising ID (Google Advertising ID / GAID / AAID)</li>
+          <li>IP address (used to infer approximate coarse location such as country or city)</li>
+          <li>Android OS version, device manufacturer, device model, and hardware architecture</li>
+          <li>Network type (Wi-Fi, 4G, 5G) and carrier information</li>
+        </ul>
+      </li>
+      <li><strong>App Usage &amp; Diagnostic Telemetry:</strong>
+        <ul>
+          <li>Screen views, feature interactions (e.g., clicking Settings, unlocking features), session duration</li>
+          <li>Crash logs, stack traces, and system state at time of crash (via Firebase Crashlytics)</li>
+          <li>Firebase Cloud Messaging (FCM) tokens to deliver push notifications and service announcements</li>
+        </ul>
+      </li>
+    </ol>
+
+    <h2>3. Device Permissions and Why We Need Them</h2>
+    <p>To record audio and provide scheduled recording features, the App requests specific Android runtime permissions:</p>
+    <div class="tbl">
+      <table>
+        <thead><tr><th>Permission</th><th>Technical Name</th><th>Purpose &amp; Usage</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Microphone</strong></td><td><code>RECORD_AUDIO</code></td><td><strong>Essential.</strong> Required to record voice notes, lectures, meetings, and sounds. Audio input is captured and written directly to your local storage.</td></tr>
+          <tr><td><strong>Audio Settings</strong></td><td><code>MODIFY_AUDIO_SETTINGS</code></td><td>Used to adjust input sensitivity (mic gain 0.5x–2.0x), enable hardware noise suppression, and configure audio source routing.</td></tr>
+          <tr><td><strong>Bluetooth / Nearby Devices</strong></td><td><code>BLUETOOTH_CONNECT</code>, <code>BLUETOOTH</code>, <code>BLUETOOTH_ADMIN</code></td><td>Required on Android 12+ to detect, connect, and route audio input from wireless Bluetooth headsets and external microphones.</td></tr>
+          <tr><td><strong>Exact Alarms</strong></td><td><code>SCHEDULE_EXACT_ALARM</code>, <code>USE_EXACT_ALARM</code></td><td>Required to trigger scheduled recordings at the precise time specified by the user.</td></tr>
+          <tr><td><strong>Post Notifications</strong></td><td><code>POST_NOTIFICATIONS</code></td><td>Required on Android 13+ to display ongoing recording controls (pause, resume, bookmark, stop) in the status bar and notify you before scheduled recordings.</td></tr>
+          <tr><td><strong>Foreground Service</strong></td><td><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_MICROPHONE</code></td><td>Keeps audio recording active without interruption when the screen is locked, turned off, or while switching apps.</td></tr>
+          <tr><td><strong>Wake Lock</strong></td><td><code>WAKE_LOCK</code></td><td>Prevents the device CPU from going to sleep while actively recording audio or executing a scheduled recording.</td></tr>
+          <tr><td><strong>Boot Completed</strong></td><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>Automatically reschedules your active scheduled recording timers if your device is restarted or rebooted.</td></tr>
+          <tr><td><strong>Storage / SAF</strong></td><td><code>Storage Access Framework</code></td><td>Allows you to select custom folders on your device or SD card to organize and save audio files.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>You can revoke any granted permission at any time through your device's <strong>Android Settings &gt; Apps &gt; Voice Recorder &gt; Permissions</strong>. Revoking microphone access will disable the ability to record audio.</p>
+
+    <h2>4. Third-Party Services and Partners</h2>
+    <p>The App incorporates the following third-party software development kits (SDKs):</p>
+    <h3>1. Google AdMob (Google Mobile Ads SDK)</h3>
+    <ul>
+      <li><strong>Purpose:</strong> Serves banner, interstitial, native, app open, and rewarded video ads to support free development.</li>
+      <li><strong>Data Processed:</strong> Advertising ID, IP address, ad interaction data, diagnostic logs.</li>
+      <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/technologies/ads" rel="noopener">https://policies.google.com/technologies/ads</a></li>
+      <li><strong>Opt-Out:</strong> You can reset or delete your Advertising ID in <strong>Android Settings &gt; Google &gt; Ads</strong>.</li>
+    </ul>
+    <h3>2. Google Firebase (Analytics, Crashlytics, Remote Config, Cloud Messaging)</h3>
+    <ul>
+      <li><strong>Purpose:</strong>
+        <ul>
+          <li><strong>Firebase Analytics:</strong> Aggregated usage statistics to understand popular features and improve the user experience.</li>
+          <li><strong>Firebase Crashlytics:</strong> Crash reporting and performance monitoring to find and fix bugs.</li>
+          <li><strong>Firebase Remote Config:</strong> Delivers dynamic app configuration, feature flags, and ad unit IDs.</li>
+          <li><strong>Firebase Cloud Messaging (FCM):</strong> Delivers relevant service notifications and updates.</li>
+        </ul>
+      </li>
+      <li><strong>Privacy Policy:</strong> <a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a> and <a href="https://firebase.google.com/support/privacy" rel="noopener">https://firebase.google.com/support/privacy</a></li>
+    </ul>
+
+    <h2>5. Legal Bases for Processing (GDPR / UK GDPR)</h2>
+    <p>For individuals located in the European Economic Area (EEA), the United Kingdom, or Switzerland, we process data under the following legal bases:</p>
+    <ul>
+      <li><strong>Consent:</strong> Where required by law (e.g., for personalized advertising and non-essential cookies/identifiers), we request your explicit consent through the Google User Messaging Platform (UMP) consent dialog.</li>
+      <li><strong>Legitimate Interests:</strong> For app security, crash debugging, fraud prevention, and maintaining core functionality (e.g., Firebase Crashlytics and Remote Config).</li>
+      <li><strong>Performance of a Contract:</strong> To deliver the core voice recording features requested when you install and run the App.</li>
+    </ul>
+    <p>You have the right to withdraw your consent at any time.</p>
+
+    <h2>6. California Privacy Rights (CCPA / CPRA)</h2>
+    <p>Under the California Consumer Privacy Act, as amended by the California Privacy Rights Act (CPRA), California residents have specific rights regarding their personal information:</p>
+    <ul>
+      <li><strong>Right to Know:</strong> You may request details about the categories and specific pieces of personal information collected through our third-party SDK partners over the preceding 12 months.</li>
+      <li><strong>Right to Delete:</strong> You can delete all local data by clearing the App's storage or uninstalling the App. You may also request deletion of telemetry data collected by third parties.</li>
+      <li><strong>Right to Opt-Out of Sale or Sharing:</strong> We do not sell your personal information or audio recordings for monetary consideration. However, using ad networks for targeted advertising may be deemed "sharing" or "selling" under California law. You can opt out via your device's ad tracking settings or through in-app consent preferences.</li>
+      <li><strong>Non-Discrimination:</strong> We will not discriminate against you for exercising your CCPA rights.</li>
+    </ul>
+    <p>To exercise your California privacy rights, contact us at <a href="mailto:support@evera.com">support@evera.com</a>.</p>
+
+    <h2>7. Children's Privacy (COPPA &amp; Global Standards)</h2>
+    <p>Voice Recorder: Audio Recorder is intended for general audiences and is not directed to children under 13 years of age (or under 16 in the European Union). We do not knowingly collect personal information from children. If you are a parent or guardian and believe that your child has provided personal information to third-party SDKs through our App, please contact us immediately at <a href="mailto:support@evera.com">support@evera.com</a> and we will assist in purging such information.</p>
+
+    <h2>8. Data Retention and Deletion</h2>
+    <ul>
+      <li><strong>Local Audio Files:</strong> All audio recordings, markers, and metadata remain on your device indefinitely until you explicitly delete them inside the App, clear the App data via Android Settings, or delete the physical files using a file manager. Uninstalling the App will remove recordings stored in the default app-specific directory (recordings saved in custom SAF external folders will remain on your device storage).</li>
+      <li><strong>Analytics and Crash Data:</strong> Data collected by Firebase and AdMob is retained in accordance with Google's data retention schedules (typically aggregated and retained for 2 to 14 months).</li>
+    </ul>
+
+    <h2>9. Data Security</h2>
+    <p>We implement reasonable administrative, technical, and physical safeguards to protect your data:</p>
+    <ul>
+      <li>Local audio files are kept in protected device storage or directories specified by you.</li>
+      <li>Network communications between the App and third-party SDKs (AdMob, Firebase) occur strictly over encrypted HTTPS/TLS protocols.</li>
+      <li>We advise users to maintain device-level security (PIN, pattern, biometrics) to protect locally stored recordings from unauthorized physical access.</li>
+    </ul>
+
+    <h2>10. International Data Transfers</h2>
+    <p>Third-party services used in the App (such as Google AdMob and Google Firebase) may store and process data in the United States and other countries where Google operates data centers. These transfers are governed by standard contractual clauses (SCCs) and data protection safeguards compliant with GDPR.</p>
+
+    <h2>11. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time to reflect changes in our practices, app features, or legal obligations. When changes are made, we will update the "Last Updated" date at the top of this page. We encourage you to review this policy periodically. Continued use of the App following the posting of changes constitutes acceptance of those changes.</p>
+
+    <h2>12. Contact Us</h2>
+    <p>If you have any questions, comments, or concerns regarding this Privacy Policy or our privacy practices, please contact us:</p>
+    <ul>
+      <li><strong>Developer:</strong> Evera Apps</li>
+      <li><strong>Email:</strong> <a href="mailto:support@evera.com">support@evera.com</a></li>
+      <li><strong>Application:</strong> Voice Recorder: Audio Recorder (<code>com.evera.voicerecorder</code>)</li>
+    </ul>
+  </main>
+</div>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Evera Labs.</span>
+  </div>
+</footer>
+</body>
+</html>
