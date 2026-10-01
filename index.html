@@ -58,7 +58,8 @@ h2{font:700 clamp(1.8rem,4vw,2.6rem)/1.1 var(--h);letter-spacing:-.02em;margin:0
 .about li strong{display:block;font:700 1.1rem var(--h)}
 .about li span{color:var(--muted)}
 .contact{border-top:1px solid var(--line)}
-.contact a.mail{font:700 clamp(1.4rem,4vw,2.2rem) var(--h);color:var(--teal)}
+.contact a.mail{display:inline-block;text-align:center;font:600 1.1rem var(--b);color:var(--on-accent);background:var(--teal);text-decoration:none;padding:16px 32px;border-radius:999px;max-width:100%;overflow-wrap:anywhere}
+.contact a.mail:hover{background:var(--ink);color:var(--bg)}
 footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:.95rem}
 footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
 footer div{display:flex;gap:20px}
@@ -117,7 +118,7 @@ footer div{display:flex;gap:20px}
 <footer>
   <div class="wrap">
     <span>© 2026 Evera Labs.</span>
-    <div><a href="privacy-policy.html">Privacy Policy</a><a href="terms-conditions.html">Terms Conditions</a></div>
+    <div><a href="privacy-policy.html">Privacy Policy</a><a href="terms-conditions.html">Terms & Conditions</a></div>
   </div>
 </footer>
 </body>
